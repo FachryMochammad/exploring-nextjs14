@@ -4,7 +4,7 @@ import React from "react";
 const StarRating = require("react-star-rating-component");
 
 const StarRatingComp = () => {
-  const [rating, setRating] = useState(0);
+  const [rating, setRating] = useState(5);
 
   const handleStarClick = (
     nextValue: number,
