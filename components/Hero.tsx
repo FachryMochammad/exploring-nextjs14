@@ -4,6 +4,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
 import ProductCard from "./ui/ProductCard";
+import TestimonyCard from "./ui/TestimonyCard";
 
 const Hero = () => {
   return (
@@ -46,6 +47,10 @@ const Hero = () => {
 
           <div className="mt-5">
             <ProductCard />
+          </div>
+
+          <div className="mt-5">
+            <TestimonyCard />
           </div>
         </div>
       </div>
