@@ -46,7 +46,17 @@ const Hero = () => {
           </a>
 
           <div className="mt-5">
-            <ProductCard />
+            <div className="flex justify-between items-center">
+              <h1 className="text-2xl text-[#3E4650] font-medium">
+                Popular Course
+              </h1>
+              <h1 className="text-lg text-[#A32929] font-medium">See All</h1>
+            </div>
+            <div className="mt-5 flex gap-4 flex-wrap">
+              {[0, 1, 2].map((_, i) => {
+                return <ProductCard key={i} />;
+              })}
+            </div>
           </div>
 
           <div className="mt-5">
