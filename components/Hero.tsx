@@ -45,22 +45,28 @@ const Hero = () => {
             />
           </a>
 
-          <div className="mt-5">
-            <div className="flex justify-between items-center">
-              <h1 className="text-2xl text-[#3E4650] font-medium">
-                Popular Course
-              </h1>
-              <h1 className="text-lg text-[#A32929] font-medium">See All</h1>
+          <div className="bg-white p-5 mt-5">
+            <div>
+              <div className="flex justify-between items-center">
+                <h1 className="text-2xl text-[#3E4650] font-medium">
+                  Popular Course
+                </h1>
+                <h1 className="text-lg text-[#A32929] font-medium">See All</h1>
+              </div>
+              <div className="mt-5 flex gap-4 flex-wrap">
+                {[0, 1, 2].map((_, i) => {
+                  return <ProductCard key={i} />;
+                })}
+              </div>
             </div>
-            <div className="mt-5 flex gap-4 flex-wrap">
-              {[0, 1, 2].map((_, i) => {
-                return <ProductCard key={i} />;
-              })}
-            </div>
-          </div>
 
-          <div className="mt-5">
-            <TestimonyCard />
+            <div className="mt-5">
+              <h2 className="text-4xl font-bold text-[#2E3838] mb-5 text-center">
+                What they <span className="text-[#CC3333]">said</span> about our
+                programs
+              </h2>
+              <TestimonyCard />
+            </div>
           </div>
         </div>
       </div>
