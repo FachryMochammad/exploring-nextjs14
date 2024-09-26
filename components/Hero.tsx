@@ -4,7 +4,8 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
 import ProductCard from "./ui/ProductCard";
-import TestimonyCard from "./ui/TestimonyCard";
+import TestimonyCardInactive from "./ui/TestimonyCard/TestimonyCardInactive";
+import TestimonyCardActive from "./ui/TestimonyCard/TestimonyCardActive";
 
 const Hero = () => {
   return (
@@ -51,9 +52,11 @@ const Hero = () => {
                 <h1 className="text-2xl text-[#3E4650] font-medium">
                   Popular Course
                 </h1>
-                <h1 className="text-lg text-[#A32929] font-medium">See All</h1>
+                <h1 className="text-lg text-[#A32929] font-medium cursor-pointer">
+                  See All
+                </h1>
               </div>
-              <div className="mt-5 flex gap-4 flex-wrap">
+              <div className="mt-5 flex gap-3">
                 {[0, 1, 2].map((_, i) => {
                   return <ProductCard key={i} />;
                 })}
@@ -65,7 +68,11 @@ const Hero = () => {
                 What they <span className="text-[#CC3333]">said</span> about our
                 programs
               </h2>
-              <TestimonyCard />
+              <div className="flex gap-3">
+                <TestimonyCardActive />
+                <TestimonyCardInactive />
+                <TestimonyCardInactive />
+              </div>
             </div>
           </div>
         </div>

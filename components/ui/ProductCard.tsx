@@ -5,7 +5,7 @@ import Cart from "./Cart";
 
 const ProductCard = () => {
   return (
-    <div className="border border-[#E5E7EB] rounded-lg p-3 bg-white max-w-[373px] hover:cursor-pointer">
+    <div className="border border-[#E5E7EB] rounded-lg p-3 bg-white max-w-[350px] hover:cursor-pointer">
       <img
         src="https://filesdev.klob.id/open/c0bae082-80f8-41c4-8512-2a091559307d/33.jpeg"
         className="aspect-video w-full rounded-lg"

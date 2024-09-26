@@ -1,7 +1,7 @@
 import React from "react";
 import { FaCircleUser } from "react-icons/fa6";
 
-const TestimonyCard = () => {
+const TestimonyCardActive = () => {
   return (
     <div className="border-inherit rounded-2xl p-6 bg-gradient-to-b from-[#D81C2A] to-[#400E12] max-w-[763px] hover:cursor-pointer">
       <svg
@@ -24,7 +24,14 @@ const TestimonyCard = () => {
       </p>
 
       <div className="flex items-center gap-6 mt-10">
-        <FaCircleUser size={"96px"} />
+        <img
+          src="https://filesdev.klob.id/user/ea0b21c7-7ae6-48ba-a510-56f60f57f8b3/4451efeb-ebea-4f8b-ae1e-6088bb261575ea0b21c7-7ae6-48ba-a510-56f60f57f8b3.png"
+          alt="photo"
+          className="rounded-full"
+          width={"96px"}
+          height={"96px"}
+        />
+
         <div>
           <h1 className="text-2xl font-bold">Ernando Wardono</h1>
           <p className="text-sm font-medium mt-1">PT. Pertamina Persero</p>
@@ -34,4 +41,4 @@ const TestimonyCard = () => {
   );
 };
 
-export default TestimonyCard;
+export default TestimonyCardActive;
