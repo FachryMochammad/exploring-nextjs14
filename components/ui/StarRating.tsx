@@ -4,7 +4,7 @@ import React from "react";
 const StarRating = require("react-star-rating-component");
 
 const StarRatingComp = () => {
-  const [rating, setRating] = useState(5);
+  const [rating, setRating] = useState(4);
 
   const handleStarClick = (
     nextValue: number,
@@ -15,8 +15,9 @@ const StarRatingComp = () => {
   };
 
   return (
-    <div>
+    <div className="text-xl">
       <StarRating
+        name="rating"
         value={rating}
         onStarClick={(
           nextValue: number,
@@ -25,7 +26,7 @@ const StarRatingComp = () => {
         ) => handleStarClick(nextValue, prevValue, name)}
         starCount={5}
         starColor={"#ffb400"}
-        emptyStarColor={"#ccc"}
+        emptyStarColor={"#F2F2F2"}
       />
     </div>
   );

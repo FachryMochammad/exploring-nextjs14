@@ -1,0 +1,19 @@
+.wishlist {
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Prevents interaction */
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  background-color: white;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.card:hover + .wishlist {
+  opacity: 1; /* Show the text */
+  visibility: visible; /* Allows interaction */
+}
+
+.wishlist:hover {
+  opacity: 1; /* Show the text */
+  visibility: visible; /* Allows interaction */
+}

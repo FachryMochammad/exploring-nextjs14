@@ -3,7 +3,7 @@ import { FaCircleUser } from "react-icons/fa6";
 
 const TestimonyCardActive = () => {
   return (
-    <div className="border-inherit rounded-2xl p-6 bg-gradient-to-b from-[#D81C2A] to-[#400E12] max-w-[763px] hover:cursor-pointer">
+    <div className="border-inherit rounded-2xl p-6 bg-gradient-to-b from-[#D81C2A] to-[#400E12] w-[763px] hover:cursor-pointer">
       <svg
         width="52"
         height="38"

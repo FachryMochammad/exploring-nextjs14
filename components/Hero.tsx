@@ -3,9 +3,6 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
-import ProductCard from "./ui/ProductCard";
-import TestimonyCardInactive from "./ui/TestimonyCard/TestimonyCardInactive";
-import TestimonyCardActive from "./ui/TestimonyCard/TestimonyCardActive";
 
 const Hero = () => {
   return (
@@ -38,43 +35,13 @@ const Hero = () => {
             Indonesia
           </p>
 
-          <a href="#">
+          <a href="/odyssey">
             <MagicButton
               title="Show My Work"
               icon={<FaLocationArrow />}
               position="right"
             />
           </a>
-
-          <div className="bg-white p-5 mt-5">
-            <div>
-              <div className="flex justify-between items-center">
-                <h1 className="text-2xl text-[#3E4650] font-medium">
-                  Popular Course
-                </h1>
-                <h1 className="text-lg text-[#A32929] font-medium cursor-pointer">
-                  See All
-                </h1>
-              </div>
-              <div className="mt-5 flex gap-3">
-                {[0, 1, 2].map((_, i) => {
-                  return <ProductCard key={i} />;
-                })}
-              </div>
-            </div>
-
-            <div className="mt-5">
-              <h2 className="text-4xl font-bold text-[#2E3838] mb-5 text-center">
-                What they <span className="text-[#CC3333]">said</span> about our
-                programs
-              </h2>
-              <div className="flex gap-3">
-                <TestimonyCardActive />
-                <TestimonyCardInactive />
-                <TestimonyCardInactive />
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
