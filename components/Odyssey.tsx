@@ -6,7 +6,7 @@ import Banner from "./ui/Banner";
 
 const Odyssey = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white pt-[76px]">
       <div className="my-16">
         <Banner />
       </div>
@@ -56,10 +56,13 @@ const Odyssey = () => {
       </div>
 
       <div className="mt-28">
-        <h2 className="text-4xl font-bold text-[#2E3838] mb-5 text-center">
+        <h2 className="text-4xl font-bold text-[#2E3838] text-center">
           What they <span className="text-[#CC3333]">said</span> about our
           programs
         </h2>
+        <div className="flex justify-center">
+          <div className="w-8 h-2 bg-[#CC3333] mt-6 mb-16"></div>
+        </div>
         <div className="flex justify-between">
           <TestimonyCardActive />
           <TestimonyCardInactive />

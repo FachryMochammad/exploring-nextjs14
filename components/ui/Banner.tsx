@@ -12,7 +12,7 @@ const Banner = () => {
           leadership development journey anytime, anywhere.
         </p>
         <div className="border max-w-max py-2 px-4 rounded-lg border-white mt-3 flex items-center gap-2 hover:cursor-pointer">
-          <p className="text-sm">Start Learning</p>
+          <p className="text-sm font-bold">Start Learning</p>
           <FaChevronDown size={"14px"} />
         </div>
       </div>

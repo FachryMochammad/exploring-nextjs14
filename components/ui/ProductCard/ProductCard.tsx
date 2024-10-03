@@ -44,7 +44,7 @@ const ProductCard = () => {
       <button
         className={`${
           Styles.wishlist
-        } border border-transparent rounded-lg max-w-max p-2 drop-shadow-2xl hover:text-[#CC3333] ${
+        } border border-transparent rounded-lg max-w-max p-2 drop-shadow-lg hover:text-[#CC3333] ${
           !isWishlist ? "text-[#80868D]" : "text-[#CC3333]"
         }`}
         onClick={() => setIsWishlist(!isWishlist)}
