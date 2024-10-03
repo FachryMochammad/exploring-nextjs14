@@ -16,7 +16,7 @@ const Odyssey = () => {
           <h1 className="text-2xl text-[#3E4650] font-medium">
             Popular Course
           </h1>
-          <h1 className="text-lg text-[#A32929] font-medium cursor-pointer">
+          <h1 className="text-lg text-[#CC3333] font-medium cursor-pointer">
             See All
           </h1>
         </div>
@@ -30,7 +30,7 @@ const Odyssey = () => {
       <div>
         <div className="flex justify-between items-center mt-11">
           <h1 className="text-2xl text-[#3E4650] font-medium">Learning</h1>
-          <h1 className="text-lg text-[#A32929] font-medium cursor-pointer">
+          <h1 className="text-lg text-[#CC3333] font-medium cursor-pointer">
             See All
           </h1>
         </div>
@@ -44,7 +44,7 @@ const Odyssey = () => {
       <div>
         <div className="flex justify-between items-center mt-11">
           <h1 className="text-2xl text-[#3E4650] font-medium">Testing Tools</h1>
-          <h1 className="text-lg text-[#A32929] font-medium cursor-pointer">
+          <h1 className="text-lg text-[#CC3333] font-medium cursor-pointer">
             See All
           </h1>
         </div>
