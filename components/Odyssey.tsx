@@ -3,6 +3,7 @@ import ProductCard from "./ui/ProductCard/ProductCard";
 import TestimonyCardInactive from "./ui/TestimonyCard/TestimonyCardInactive";
 import TestimonyCardActive from "./ui/TestimonyCard/TestimonyCardActive";
 import Banner from "./ui/Banner";
+import { H2, Title } from "./atom/Typography";
 
 const Odyssey = () => {
   return (
@@ -13,9 +14,7 @@ const Odyssey = () => {
 
       <div>
         <div className="flex justify-between items-center">
-          <h1 className="text-2xl text-[#3E4650] font-medium">
-            Popular Course
-          </h1>
+          <Title className="text-[#3E4650] font-medium">Popular Course</Title>
           <h1 className="text-lg text-[#CC3333] font-medium cursor-pointer">
             See All
           </h1>
@@ -29,7 +28,7 @@ const Odyssey = () => {
 
       <div>
         <div className="flex justify-between items-center mt-11">
-          <h1 className="text-2xl text-[#3E4650] font-medium">Learning</h1>
+          <Title className="text-[#3E4650] font-medium">Learning</Title>
           <h1 className="text-lg text-[#CC3333] font-medium cursor-pointer">
             See All
           </h1>
@@ -43,7 +42,7 @@ const Odyssey = () => {
 
       <div>
         <div className="flex justify-between items-center mt-11">
-          <h1 className="text-2xl text-[#3E4650] font-medium">Testing Tools</h1>
+          <Title className="text-[#3E4650] font-medium">Testing Tools</Title>
           <h1 className="text-lg text-[#CC3333] font-medium cursor-pointer">
             See All
           </h1>
@@ -56,10 +55,10 @@ const Odyssey = () => {
       </div>
 
       <div className="mt-28">
-        <h2 className="text-4xl font-bold text-[#2E3838] text-center">
+        <H2 className="font-bold text-[#2E3838] text-center">
           What they <span className="text-[#CC3333]">said</span> about our
           programs
-        </h2>
+        </H2>
         <div className="flex justify-center">
           <div className="w-8 h-2 bg-[#CC3333] mt-6 mb-16"></div>
         </div>

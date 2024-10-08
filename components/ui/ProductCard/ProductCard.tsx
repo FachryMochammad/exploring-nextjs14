@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { FaCircleUser, FaRegHeart, FaHeart } from "react-icons/fa6";
 import StarRatingComp from "../StarRating";
 import Styles from "./ProductCard.module.css";
+import { Body, BodySmall, TitleMedium } from "@/components/atom/Typography";
 
 const ProductCard = () => {
   const [isWishlist, setIsWishlist] = useState(false);
@@ -21,23 +22,26 @@ const ProductCard = () => {
         {/* <div className="border border-[#A3AEB9] rounded-3xl py-[5px] px-3 w-max mt-3 mb-2">
         <p className="text-[#151519] text-xs">Course</p>
         </div> */}
-        <h1 className="text-xl font-bold text-[#151519] mt-3">
+
+        <TitleMedium className="font-bold text-[#151519] mt-3">
           Menunjukan Sikap dan Potensi saat Wawancara Kerja
-        </h1>
+        </TitleMedium>
         <div className="flex items-center gap-2 my-1">
           <FaCircleUser className="text-[#5F070F]" size={"28px"} />
-          <p className="text-[#3E4650]">Novia Ayu</p>
+          <Body className="text-[#3E4650]">Novia Ayu</Body>
         </div>
         <div className="flex items-center gap-2">
           <StarRatingComp />
           <div>
-            <p className="text-[#3E4650] text-sm font-bold mb-1">4.9</p>
+            <BodySmall className="text-[#3E4650] font-bold mb-1">4.9</BodySmall>
           </div>
         </div>
         <div className="mt-10 flex justify-between items-center">
           <div className="flex items-end gap-2">
-            <p className="text-[#3E4650] text-xl font-bold">Rp 1.359.000</p>
-            <p className="text-[#A3AEB9] line-through">Rp 1.359.000</p>
+            <TitleMedium className="text-[#3E4650] font-bold">
+              Rp 1.359.000
+            </TitleMedium>
+            <Body className="text-[#A3AEB9] line-through">Rp 1.359.000</Body>
           </div>
         </div>
       </div>
